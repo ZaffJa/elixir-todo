@@ -1,21 +1,17 @@
-# Todo
+# TODO
+This project purpose is to put everything I've learned about elixir.
+
+Some of the roadmaps are:
+- realtime chat app
+- stress-test (see how this application handles hundreds of thousands of connection)
+- our all time favourite, `Hello World`
+- [Learn Functional Programming With Elixir](https://pragprog.com/book/cdc-elixir/learn-functional-programming-with-elixir)
+- probably a library management system as well
+
 
 To start your Phoenix server:
 
-  * Install dependencies with `mix deps.get`
-  * Create and migrate your database with `mix ecto.setup`
-  * Install Node.js dependencies with `cd assets && npm install`
-  * Start Phoenix endpoint with `mix phx.server`
+  * Install dependencies with `make setup`. (Only run this once to setup everything properly)
+  * Start Phoenix endpoint with `make up`
 
 Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
-
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
-
-## Learn more
-
-  * Official website: http://www.phoenixframework.org/
-  * Guides: https://hexdocs.pm/phoenix/overview.html
-  * Docs: https://hexdocs.pm/phoenix
-  * Mailing list: http://groups.google.com/group/phoenix-talk
-  * Source: https://github.com/phoenixframework/phoenix
-# elixir-todo

@@ -25,9 +25,5 @@ bash:
 task-start:
 	$(DCE) mix start
 
-mix-test:
-	$(DC) up -d db_test app
-	$(DCE) mix test
-
 down:
 	$(DC) down
