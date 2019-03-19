@@ -1,0 +1,23 @@
+version: "3"
+
+services:
+  app:
+    build: .
+    volumes:
+    - .:/app
+    ports:
+      - "4000:4000"
+    depends_on:
+      - db
+    
+  db:
+    image: postgres:9.5-alpine
+    environment:
+      PGDATA: /var/lib/postgresql/data/pgdata
+      POSTGRES_USER: sammy
+      POSTGRES_PASSWORD: sammy
+      POSTGRES_DB: sam_bank
+    restart: always
+    volumes:
+      - ./pgdata:/var/lib/postgresql/data
+    
